@@ -69,7 +69,7 @@ if opts.trainer == 'aclgan':
     style_dim = config['gen']['style_dim']
     trainer = aclgan_Trainer(config)
 else:
-    sys.exit("Only support aclgan)
+    sys.exit("Only support aclgan")
 
 def focus_translation(x_fg, x_bg, x_focus):
     x_map = (x_focus+1)/2
